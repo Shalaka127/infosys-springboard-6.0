@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Virtual Environment
+venv/
+.venv/
+env/
+dist/
+build/
+*.egg-info/
+
+# Streamlit
+.streamlit/
+
+# VS Code
+.vscode/
+
+# Project specifics
+old_backups/
+test_write.txt
+dataset/*.csv
+!dataset/master_data.csv 
