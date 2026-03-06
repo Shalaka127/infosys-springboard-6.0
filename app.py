@@ -158,7 +158,7 @@ with st.sidebar:
     st.markdown('<div style="margin: 20px 0;"></div>', unsafe_allow_html=True)
     st.markdown('<div style="font-size:18px; font-weight:850; color:rgba(255,255,255,0.6); margin-bottom:12px; text-transform:uppercase; letter-spacing:1.5px;">System Settings</div>', unsafe_allow_html=True)
     dark_mode = st.toggle("Dark Mode", value=True)
-    st.markdown('<div style="font-size:16px; font-weight:600; color:rgba(255,255,255,0.5); margin-top:20px;">v2.8 Enterprise Command Center</div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-size:16px; font-weight:600; color:rgba(255,255,255,0.5); margin-top:20px;">Infosys Springboard 6.0 | PulseScore</div>', unsafe_allow_html=True)
 
 # Theme Variables
 if dark_mode:
