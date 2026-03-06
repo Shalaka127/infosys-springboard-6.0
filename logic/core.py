@@ -8,9 +8,12 @@ import io
 
 @st.cache_data
 def load_data(uploaded_file=None):
-    # Calculate base path relative to this script
-    base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base_path = os.path.dirname(os.path.dirname(__file__))
     default_dataset_path = os.path.join(base_path, "dataset", "India_Healthcare_Final_GeoPreserved.csv")
+    
+    # Check if file exists, if not try relative to root
+    if not os.path.exists(default_dataset_path):
+        default_dataset_path = os.path.join("dataset", "India_Healthcare_Final_GeoPreserved.csv")
     
     if uploaded_file is not None:
         try: df = pd.read_csv(uploaded_file)
